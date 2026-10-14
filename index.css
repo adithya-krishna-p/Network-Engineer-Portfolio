@@ -304,6 +304,15 @@ body {
   color: var(--accent-green);
   margin-bottom: 20px;
 }
+.typewriter-box1{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 1.35rem;
+  color: var(--accent-green);
+  margin-bottom: 20px;
+}
 
 .prompt-symbol {
   color: var(--text-dim);
@@ -514,7 +523,7 @@ body {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
+  gap: 34px;
 }
 
 .project-card {
@@ -782,6 +791,9 @@ body {
   }
 
   .typewriter-box {
+    justify-content: center;
+  }
+  .typewriter-box1 {
     justify-content: center;
   }
 

@@ -1,3 +1,61 @@
+// Typewriter effect for the second typewriter box
+
+function initTypewriter2() {
+  const textElement = document.getElementById('typewriter-text1');
+  if (!textElement) return;
+
+  const roles = [
+    'Networking',
+    'VLAN',
+    'Routing',
+    'Switching',
+    'IP Addressing',
+    'Subnetting',
+  ];
+
+  let roleIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  const typingSpeed = 80;
+  const deletingSpeed = 40;
+  const pauseTime = 1600;
+
+  function type() {
+    const currentRole = roles[roleIndex];
+
+    if (isDeleting) {
+      textElement.textContent = currentRole.substring(0, charIndex - 1);
+      charIndex--;
+    } else {
+      textElement.textContent = currentRole.substring(0, charIndex + 1);
+      charIndex++;
+    }
+
+    let nextDelay = isDeleting ? deletingSpeed : typingSpeed;
+
+    if (!isDeleting && charIndex === currentRole.length) {
+      isDeleting = true;
+      nextDelay = pauseTime;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      roleIndex = (roleIndex + 1) % roles.length;
+      nextDelay = 400;
+    }
+
+    setTimeout(type, nextDelay);
+  }
+
+  type();
+}
+
+
+
+
+
+
+
+
+
 /* ===================================================
    PORTFOLIO INTERACTIVE SCRIPTS
    =================================================== */
@@ -5,6 +63,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initParticleCanvas();
   initTypewriter();
+  initTypewriter2();
   initMobileNav();
   initProjectFiltering();
   initContactActions();
