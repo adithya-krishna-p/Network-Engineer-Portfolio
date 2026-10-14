@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adithyakrishna | Software & Network Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Adithyakrishna Pradeep Kumar - Software Engineer & Systems Enthusiast"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Google Fonts: Space Grotesk & Fira Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./index.css" rel="stylesheet" />
+    <script src="./script.js"></script>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Ambient Neon Particles Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation Bar -->
+    <header class="header">
+      <nav class="nav-container">
+        <a href="#hero" class="logo">
+          <span class="logo-bracket">&lt;</span>PING ME
+          <span class="logo-accent">/&gt;</span>
+        </a>
+
+        <div class="nav-links" id="nav-links">
+          <a href="#hero" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="#contact" class="btn btn-primary btn-sm">
+            <span>Get in Touch</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero-section">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <div class="terminal-badge">
+              <span class="pulse-dot"></span>
+              <code>SYSTEM STATUS: ONLINE // AVAILABLE FOR HIRE</code>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="highlight">Adithyakrishna</span>
+            </h1>
+
+            <div class="typewriter-box">
+              <span class="prompt-symbol">$</span>
+              <span id="typewriter-text" class="typewriter-text"></span>
+              <span class="cursor">|</span>
+            </div>
+
+            <p class="hero-description">
+              Network Engineer with 2+ Years of hands-on experience maintaining
+              secure enterprise network environment. Proficient in network
+              monitoring, troubleshooting, and infrastructure support. Adept at
+              rapid problem resolution in critical banking environments, with a
+              strong commitment to learning emerging cloud technologies.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fa-solid fa-code-branch"></i>
+                <span>Explore Projects</span>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <i class="fa-solid fa-terminal"></i>
+                <span>Initialize Contact</span>
+              </a>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://github.com/adithya-krishna-p"
+                target="_blank"
+                rel="noopener"
+                class="social-btn"
+                aria-label="GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/adithya-krishnan-p/"
+                target="_blank"
+                rel="noopener"
+                class="social-btn"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="mailto:adithyakrishnapk789@gmail.com"
+                class="social-btn"
+                aria-label="Email"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="terminal-window">
+              <div class="terminal-header">
+                <div class="window-controls">
+                  <span class="dot close"></span>
+                  <span class="dot min"></span>
+                  <span class="dot max"></span>
+                </div>
+                <span class="terminal-title">bash — 80x24</span>
+              </div>
+              <div class="terminal-body">
+                <p>
+                  <span class="t-green">visitor@apk</span>:<span class="t-blue"
+                    >~</span
+                  >$ whoami
+                </p>
+                <p class="t-dim">&gt; Adithyakrishna</p>
+                <br />
+                <p>
+                  <span class="t-green">SW</span>:<span class="t-blue"
+                    >~</span
+                  >$ ping 192.168.25.1
+                </p>
+                <p>
+                  <span class="t-green">SW</span>:<span class="t-blue"
+                    >~</span
+                  >$ Tracert 192.168.25.1
+                </p>
+                <pre class="t-code">
+{
+  "role": " Network Engineer",
+  "infrastructure": ["Cisco Routing", "Subnetting", "Linux"],
+  "location": "Bengaluru, India"
+}</pre
+                >
+                <br />
+                <p>
+                  <span class="t-green">visitor@apk-core</span>:<span
+                    class="t-blue"
+                    >~</span
+                  >$ <span class="blink">_</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-badge">ABOUT ME</div>
+          <h2 class="section-title">
+            Bridging Code and <span class="highlight">Network Systems</span>
+          </h2>
+
+          <div class="about-grid">
+            <div class="about-card glow-card">
+              <a href="./files/Switching.html" target="_blank" rel="noopener">
+                <i class="fa-solid fa-microchip card-icon"></i>
+              </a>
+              <h3>Switching</h3>
+              <p>
+                Switching in a computer network is the process of channeling and
+                forwarding data packets or frames from a source device to a
+                designated destination device across a local or wide area
+                network.
+              </p>
+            </div>
+
+            <div class="about-card glow-card">
+              <i class="fa-solid fa-laptop-code card-icon"></i>
+              <h3>Routing</h3>
+              <p>
+                Network routing is the process of selecting the best path for
+                data packets to travel from a source to a destination across one
+                or more interconnected networks. It operates at Layer 3 (the
+                Network Layer) of the OSI model.
+              </p>
+            </div>
+
+            <div class="about-card glow-card">
+              <i class="fa-solid fa-compass-drafting card-icon"></i>
+              <h3>Cisco Networking</h3>
+              <p>
+                Passionate about crafting minimalist, fluid user interfaces
+                backed by performant algorithms and intuitive UI/UX design
+                patterns.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section bg-darker">
+        <div class="container">
+          <div class="section-badge">TECH STACK</div>
+          <h2 class="section-title">
+            Tools & <span class="highlight">Competencies</span>
+          </h2>
+
+          <div class="skills-wrapper">
+            <div class="skill-category">
+              <h4>
+                <i class="fa-solid fa-network-wired"></i> Networking & Systems
+              </h4>
+              <div class="skill-tags">
+                <span class="skill-tag">CCNA Routing & Switching</span>
+                <span class="skill-tag">TCP/IP & DNS</span>
+                <span class="skill-tag">Linux CLI</span>
+                <span class="skill-tag">Git / GitHub</span>
+                <span class="skill-tag">Docker Basics</span>
+              </div>
+            </div>
+
+            <!-- <div class="skill-category">
+            <h4><i class="fa-solid fa-server"></i> Backend & Storage</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">SQL / PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+            </div>
+          </div> -->
+
+            <div class="skill-category">
+              <h4>
+                <i class="fa-solid fa-network-wired"></i> Networking & Systems
+              </h4>
+              <div class="skill-tags">
+                <span class="skill-tag">CCNA Routing & Switching</span>
+                <span class="skill-tag">TCP/IP & DNS</span>
+                <span class="skill-tag">Linux CLI</span>
+                <span class="skill-tag">Git / GitHub</span>
+                <span class="skill-tag">Docker Basics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-badge">PORTFOLIO</div>
+          <h2 class="section-title">
+            Selected <span class="highlight">Projects</span>
+          </h2>
+
+          <!-- Category Filters -->
+          <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">
+              Network Projects
+            </button>
+            <button class="filter-btn" data-filter="systems">
+              Systems & Network
+            </button>
+            <!-- <button class="filter-btn" data-filter="ui">UI/UX Design</button> -->
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card glow-card" data-category="web">
+              <div class="project-header">
+                <span class="project-category">Network Projects</span>
+                <div class="project-links">
+                  <a href="./files/project1.html" target="_blank" rel="noopener"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                  <a href="#" target="_blank" rel="noopener"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </div>
+              </div>
+              <h3>Static Routing</h3>
+              <p>
+                Designed and validated a network in Cisco Packet Tracer
+                utilizing Static Routing. Responsibilities included assigning IP
+                schemas, configuring Next-Hop IP addresses, and managing Exit
+                Interfaces to establish reliable communication between LANs
+                while minimizing routing overhead
+              </p>
+              <div class="project-tech">
+                <span>Cisco Packet Tracer</span>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card glow-card" data-category="systems">
+              <div class="project-header">
+                <span class="project-category">Systems</span>
+                <div class="project-links">
+                  <a href="#" target="_blank" rel="noopener"
+                    ><i class="fa-brands fa-github"></i
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <h3>
+                Project Title: Multi-OS Virtualization & Network Configuration
+              </h3>
+              <p>
+                --Virtualized Multi-OS Testing Environments: Deployed and
+                managed Linux (Kali Linux, Ubuntu) and Windows virtual machines
+                using Oracle VirtualBox to simulate production and testing
+                networks. --Active Directory & Domain Infrastructure: Installed
+                and configured Windows Server with Active Directory Domain
+                Services (AD DS); successfully joined multiple Windows client
+                VMs to the domain and enforced baseline Group Policy/security
+                rules. --Network Topology & IP Configuration: Designed custom
+                virtual network layouts utilizing NAT, Bridged, and Internal
+                networking modes; configured static IP addressing and managed
+                network interfaces for stable host-to-guest and inter-VM
+                communication.
+              </p>
+              <div class="project-tech">
+                <span>CLI</span>
+                <span>Cisco Packet Tracer</span>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card glow-card" data-category="web">
+              <div class="project-header">
+                <span class="project-category">Network</span>
+                <div class="project-links">
+                  <a href="#" target="_blank" rel="noopener"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                  <a href="#" target="_blank" rel="noopener"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </div>
+              </div>
+              <h3>VLAN Configuration</h3>
+              <p>
+                Project Overview Designed and implemented a scalable local area
+                network (LAN) using Cisco Packet Tracer to improve security and
+                broadcast traffic management within a multi-department
+                organizational structure.
+              </p>
+              <div class="project-tech">
+                <span>Access port</span>
+                <span>Vlan 10</span>
+                <span>vlan 20</span>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card glow-card" data-category="ui">
+              <div class="project-header">
+                <span class="project-category">Network</span>
+                <div class="project-links">
+                  <a href="https://github.com/adithya-krishna-p" target="_blank" rel="noopener"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <h3>Personal hosted website</h3>
+              <p>
+                Creating a simple hosted static website on GitHub involves
+                creating HTML and CSS files and hosting them on a GitHub
+                repository. Start by creating a new repository on GitHub, then
+                add an HTML file and a CSS file to the repository. In the HTML
+                file, structure your content, and link the CSS file. Commit
+                these changes and push to GitHub. Enable GitHub Pages in the
+                repository settings to host your site. Your website will be
+                accessible at "harikrishnanpn123.github.io/Webpage". This
+                approach is suitable for basic sites without server-side
+                processing, making it perfect for personal pages, portfolios, or
+                informational websites. To create a basic hosted static website
+                on GitHub: 1. **Repository Setup:** - Create a new repository on
+                GitHub. - Name it following the pattern:
+                *Adithyakrishna.github.io 2. **File Creation:** - Inside the
+                repository, add an HTML file (e.g., index.html) and a CSS file
+                (e.g., style.css). 3. **HTML Content:** - Write your website
+                content in the HTML file. Include elements like headings,
+                paragraphs, and links. 4. **CSS Styling:** - Style your HTML
+                elements using CSS in the separate style.ess file to enhance the
+                visual appeal. 5. **Commit and Push:** - Commit your changes and
+                push them to the main branch of your GitHub repository. 6.
+                **GitHub Pages:** - In your repository settings, navigate to the
+                GitHub Pages section. - Choose the main branch as the source. -
+                GitHub Pages will provide a link (e.g., 'https://
+                username.github.io) where your static website is hosted. Now,
+                your simple HTML and CSS static website is accessible globally
+                through the GitHub Pages link. Check the Static Webpage That i
+                have hosted in GITHUB and i will be Enhancing the site
+                Frequently. Stay in Touch!
+              </p>
+              <div class="project-tech">
+                <span>Figma</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience / Timeline -->
+      <section id="experience" class="section bg-darker">
+        <div class="container">
+          <div class="section-badge">TIMELINE</div>
+          <h2 class="section-title">
+            Education & <span class="highlight">Experience</span>
+          </h2>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content glow-card">
+                <span class="timeline-date">2025 - Present</span>
+                <h3>L1 Network ENGINEER</h3>
+                <p class="timeline-sub">
+                  On-site implementations & router operations
+                </p>
+                <p>
+                  maintaining secure enterprise network environment. Proficient
+                  in network monitoring, troubleshooting, and infrastructure
+                  support. Adept at rapid problem resolution in critical banking
+                  environments, with a strong commitment to learning emerging
+                  cloud technologies.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content glow-card">
+                <span class="timeline-date">2019 - 2023</span>
+                <h3>B.Tech in Computer Science & Engineering</h3>
+                <p class="timeline-sub">MES College of Engineering / KTU</p>
+                <p>
+                  Graduated with a strong foundation in software development,
+                  networking, and systems engineering. Completed projects in web
+                  applications, network simulations, and algorithm optimization.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content glow-card">
+                <span class="timeline-date">Certifications</span>
+                <h3>Cisco Networking Academy</h3>
+                <p class="timeline-sub">CCNA & Networking Basics</p>
+                <p>
+                  Extensive hands-on labs with Cisco Packet Tracer, enterprise
+                  routing topologies, VLANs, and IPv4/IPv6 address routing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-badge">CONNECT</div>
+          <h2 class="section-title">
+            Get In <span class="highlight">Touch</span>
+          </h2>
+
+          <div class="contact-grid">
+            <div class="contact-info">
+              <p class="contact-intro">
+                Whether you have an opening, an interesting systems problem, or
+                want to collaborate on a software project, my inbox is open.
+              </p>
+
+              <div class="contact-card glow-card">
+                <i class="fa-solid fa-envelope contact-card-icon"></i>
+                <div>
+                  <span class="label">Email Address</span>
+                  <p id="email-address">adithyakrishnan.p@gmail.com</p>
+                </div>
+                <button
+                  id="copy-email-btn"
+                  class="copy-btn"
+                  title="Copy to clipboard"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <div class="contact-card glow-card">
+                <i class="fa-solid fa-location-dot contact-card-icon"></i>
+                <div>
+                  <span class="label">Location</span>
+                  <p>Bengaluru, Karnataka, India</p>
+                </div>
+              </div>
+            </div>
+
+            <form id="contact-form" class="contact-form glow-card">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required placeholder="John Doe" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  required
+                  placeholder="john@example.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  rows="5"
+                  required
+                  placeholder="Hey Adithyakrishna, I'd like to talk about..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Transmit Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>© 2026 Adithyakrishna.</p>
+        <div class="footer-links">
+          <a href="#hero">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toast" class="toast"></div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
