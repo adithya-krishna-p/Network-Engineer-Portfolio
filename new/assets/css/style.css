@@ -1250,7 +1250,7 @@ section .container {
 
 @media (min-width: 1200px) {
   #device-size::before {
-    content: "XL";
+    content: "";
   }
 }
 
